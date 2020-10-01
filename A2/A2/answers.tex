@@ -1,0 +1,44 @@
+\documentclass{article} %article 文档
+% \usepackage{ctex}  %使用宏包(为了能够显示汉字)
+\title{COMP4650 Assignment 2 Answers}  %文章标题
+\author{Jieli Zheng}   %作者的名称
+\date{u6579712}
+% 设置页面的环境,a4纸张大小，左右上下边距信息
+\usepackage[a4paper,left=10mm,right=10mm,top=15mm,bottom=15mm]{geometry}
+\usepackage{array}  
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{float} 
+\usepackage{subfigure}
+
+\begin{document}
+\maketitle
+
+\section*{Question 1 A simple linear classifier}
+Generally I make three major changes on the classic Logistic Regression model.\\
+The first major change I make in preprocessor is using SnowballStemmer with 
+language=english. SnowballStemmer is a nltk package built-in stemmer that can 
+transform any english words back to their stems which is easier for tokenizer 
+to find the right tokens from the raw text.\\
+The seconde major change I make is using tokenizer to WordPunctTokenizer instead 
+of WhitespaceTokenizer. The WordPunctTokenizer can split sentence into a bunch
+of words and single punctunations. It is stronger than the original setting 
+with WhitespaceTokenizer because WhitespaceTokenizer can't split punctunations 
+from word. It definitely has different tokens like "word," "word." which should 
+be the same meaning in human's perspective.\\
+Last major change I make in CountVectorizer is setting the parameter 
+max features to 5000. The advantage of extracting more features is that model 
+can have larger observation on low frequency words with explicit tendency. 
+%three changes:\\
+%CountVectorizer: stop words max features\\
+%Preprocessor: SnowballStemmer WordPunctTokenizer\\
+%LogisticRegression: class weight\\
+
+\section*{Question 2 Embedding based classifier}
+Code in Pycharm
+
+\section*{Question 3 Tuning a pytorch model}
+
+
+\end{document}
