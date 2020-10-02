@@ -1,15 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7b307737-3d6c-4f34-be0e-402e2bc172a1" name="Default Changelist" comment="" />
+    <list default="true" id="7b307737-3d6c-4f34-be0e-402e2bc172a1" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/adam32-5LR0.001.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/answers.log" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/answers.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/answers.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/answers.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/answers.synctex.gz" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/answers.synctex.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/answers.tex" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/answers.tex" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/saved_models/classifier.pth" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/saved_models/classifier.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/saved_models/word_embeddings.pth" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/saved_models/word_embeddings.pth" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/train_embedding_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/train_embedding_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/train_final_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/train_final_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/A2/A2/train_word2vec.py" beforeDir="false" afterPath="$PROJECT_DIR$/A2/A2/train_word2vec.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IgnoredFileRootStore">
+    <option name="generatedRoots">
+      <set>
+        <option value="D:\COMP4650\Assignment2\.idea" />
+      </set>
+    </option>
+  </component>
   <component name="ProjectId" id="1hnprkENyDzxVlrNwL5DREvNBTi" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="D:/COMP4620/ASSIGNMENT/comp4620-2020-assignment-2" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -134,10 +162,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Python.train_embedding_classifier" />
-        <item itemvalue="Python.train_pretrained_classifier" />
         <item itemvalue="Python.train_word2vec" />
-        <item itemvalue="Python.train_final_classifier" />
         <item itemvalue="Python.train_vector_classifer" />
+        <item itemvalue="Python.train_pretrained_classifier" />
+        <item itemvalue="Python.train_final_classifier" />
       </list>
     </recent_temporary>
   </component>
@@ -153,5 +181,16 @@
       <updated>1600656910470</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

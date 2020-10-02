@@ -27,6 +27,8 @@ class FastText(nn.Module):
         # TODO perform embed, aggregate, and linear, then return the predicted class probabilities.
         x = self.embeddings(x)
         # print(x.shape)
-        out = self.W.forward(torch.sum(x, dim=1))
+        # print(torch.mean(x,dim=1).shape)
+
+        out = self.W.forward(torch.mean(x, dim=1))
         return out
 

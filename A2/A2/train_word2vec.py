@@ -6,8 +6,8 @@ from models import FastText
 from plotting import *
 from training import train_model
 
-num_epochs = 5
-num_hidden = 64
+num_epochs = 10
+num_hidden = 128
 
 dev = 'cuda' if torch.cuda.is_available() else 'cpu'
 dataset = TextDS(os.path.join('data', 'unlabelled_movie_reviews.csv'), dev=dev)

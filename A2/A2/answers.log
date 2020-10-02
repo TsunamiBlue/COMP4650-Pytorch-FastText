@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  1 OCT 2020 13:56
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  2 OCT 2020 22:07
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -189,16 +189,61 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 16.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 42--53
+
+ []
+
+File: adam64-5LR0.5.jpg Graphic file (type bmp)
+<adam64-5LR0.5.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 54--72
+
+ []
+
 [1
 
-] (./answers.aux) ) 
-Here is how much of TeX's memory you used:
- 1729 strings out of 481639
- 26363 string characters out of 5931516
- 272897 words of memory out of 5000000
- 18858 multiletter control sequences out of 15000+600000
- 537864 words of font info for 43 fonts, out of 8000000 for 9000
- 36 hyphenation exceptions out of 8191
- 36i,6n,33p,228b,184s stack positions out of 5000i,500n,10000p,200000b,80000s
+]
+File: adam64-5LR0.001.jpg Graphic file (type bmp)
+<adam64-5LR0.001.jpg>
 
-Output written on answers.pdf (1 page).
+Underfull \hbox (badness 10000) in paragraph at lines 78--95
+
+ []
+
+File: adam64-5LR0.1.jpeg Graphic file (type bmp)
+<adam64-5LR0.1.jpeg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 99--118
+
+ []
+
+[2]
+File: adam128-10LR0.001.jpg Graphic file (type bmp)
+<adam128-10LR0.001.jpg>
+
+Underfull \hbox (badness 10000) in paragraph at lines 119--138
+
+ []
+
+[3] [4] (./answers.aux) ) 
+Here is how much of TeX's memory you used:
+ 1759 strings out of 481639
+ 26953 string characters out of 5931516
+ 274897 words of memory out of 5000000
+ 18879 multiletter control sequences out of 15000+600000
+ 537872 words of font info for 44 fonts, out of 8000000 for 9000
+ 36 hyphenation exceptions out of 8191
+ 36i,6n,33p,599b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on answers.pdf (4 pages).
