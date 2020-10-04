@@ -75,23 +75,15 @@ class TextDS:
             for i in range(len(sentence)):
                 current_context_window = []
                 if i-w < 0:
-                    # front_window = sentence[:i]
                     continue
                 else:
                     front_window = sentence[i-w:i]
 
                 if i+w > len(sentence):
-                    # behind_window = sentence[i+1:]
                     continue
                 else:
                     behind_window = sentence[i:i+w]
                 current_context_window = front_window + behind_window
-                # if len(current_context_window) != 2:
-                #     print("{} and {} and {}+{}".format(sentence,i,front_window,behind_window))
-                # rdy_context_window = []
-                # for k in range(len(current_context_window)):
-                #     rdy_context_window.append([current_context_window[k]])
-
                 x.append(current_context_window)
                 y.append(sentence[i])
         #

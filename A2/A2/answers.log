@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  2 OCT 2020 22:07
+This is XeTeX, Version 3.14159265-2.6-0.999992 (TeX Live 2020/W32TeX) (preloaded format=xelatex 2020.8.9)  4 OCT 2020 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -190,24 +190,29 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 16.
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Underfull \hbox (badness 10000) in paragraph at lines 19--40
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Underfull \hbox (badness 10000) in paragraph at lines 45--56
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 42--53
+Underfull \hbox (badness 10000) in paragraph at lines 45--56
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 45--56
 
  []
 
 File: adam64-5LR0.5.jpg Graphic file (type bmp)
 <adam64-5LR0.5.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 54--72
+Underfull \hbox (badness 10000) in paragraph at lines 57--75
 
  []
 
@@ -217,14 +222,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 54--72
 File: adam64-5LR0.001.jpg Graphic file (type bmp)
 <adam64-5LR0.001.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 78--95
+Underfull \hbox (badness 10000) in paragraph at lines 81--98
 
  []
 
 File: adam64-5LR0.1.jpeg Graphic file (type bmp)
 <adam64-5LR0.1.jpeg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 99--118
+Underfull \hbox (badness 10000) in paragraph at lines 102--121
 
  []
 
@@ -232,11 +237,31 @@ Underfull \hbox (badness 10000) in paragraph at lines 99--118
 File: adam128-10LR0.001.jpg Graphic file (type bmp)
 <adam128-10LR0.001.jpg>
 
-Underfull \hbox (badness 10000) in paragraph at lines 119--138
+Underfull \hbox (badness 10000) in paragraph at lines 122--141
 
  []
 
-[3] [4] (./answers.aux) ) 
+[3]
+Underfull \hbox (badness 10000) in paragraph at lines 163--180
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 181--198
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 199--207
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 210--218
+
+ []
+
+[4] [5] (./answers.aux) ) 
 Here is how much of TeX's memory you used:
  1759 strings out of 481639
  26953 string characters out of 5931516
@@ -246,4 +271,4 @@ Here is how much of TeX's memory you used:
  36 hyphenation exceptions out of 8191
  36i,6n,33p,599b,235s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on answers.pdf (4 pages).
+Output written on answers.pdf (5 pages).

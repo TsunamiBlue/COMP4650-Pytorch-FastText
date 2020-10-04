@@ -14,7 +14,16 @@ class FastText(nn.Module):
         self.embeddings = nn.Embedding(vocab_size,embedding_dim, padding_idx=0)
         if word_embeddings is not None:
             self.embeddings = self.embeddings.from_pretrained(word_embeddings, freeze=True, padding_idx=0)
-        self.W = nn.Linear(embedding_dim, num_classes)
+        # self.W = nn.Linear(embedding_dim, num_classes)
+        self.multi_layers = nn.Sequential(
+            nn.Linear(embedding_dim,512),
+            nn.Dropout(p=0.5),
+            nn.Sigmoid(),
+            nn.Linear(512,2048),
+            nn.Dropout(p=0.5),
+            nn.Sigmoid()
+        )
+        self.W = nn.Linear(2048,num_classes)
 
     def forward(self, x):
         """
@@ -26,9 +35,13 @@ class FastText(nn.Module):
 
         # TODO perform embed, aggregate, and linear, then return the predicted class probabilities.
         x = self.embeddings(x)
-        # print(x.shape)
-        # print(torch.mean(x,dim=1).shape)
-
-        out = self.W.forward(torch.mean(x, dim=1))
+        # multi-layer average
+        multi_out = self.multi_layers(torch.mean(x, dim=1))
+        out = self.W(multi_out)
+        # # original mean imple
+        # out = self.W(torch.mean(x, dim=1))
+        # # bad max imple
+        # maxout, index = torch.max(x, axis=1)
+        # out = self.W(maxout)
         return out
 

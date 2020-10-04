@@ -29,7 +29,10 @@ from word. It definitely has different tokens like "word," "word." which should
 be the same meaning in human's perspective.\\
 Last major change I make in CountVectorizer is setting the parameter 
 max features to 5000. The advantage of extracting more features is that model 
-can have larger observation on low frequency words with explicit tendency. 
+can have larger observation on low frequency words with explicit tendency.\\
+training accuracy: 0.9165333333333333\\
+validation accuracy: 0.8768\\
+testing accuracy: 0.8778 \\
 %three changes:\\
 %CountVectorizer: stop words max features\\
 %Preprocessor: SnowballStemmer WordPunctTokenizer\\
@@ -138,18 +141,79 @@ The final setting I use is to handle both overfitting and accuracy. Firstly, to 
 
 
 \section*{Question 4 Comparison of models}
-LogisticRegression model performs better. LogisticRegression is used for classify 
+LogisticRegression model performs a bit better if I take testing accuracy and training time into account. LogisticRegression is used for classify 
 whether candidate belongs to a certain class, movie review problem is a binary 
-classify problem and LogisticRegression is suitable for this problem. What's more, movie review usually contains emotional words that  decides whether the review is positive or negative.
+classify problem and LogisticRegression is suitable for this problem. 
+FastText is a text classification algorithm based on neural network that can be used both unsupervised and 
+supervised learning. FastText here uses one linear layer as well as Vectorizer
+to extract features. I think there are several reasons for FastText not taking advantage 
+over simple logistic regression. First of all, the tendency of a movie review is 
+relevant to the order of the words, which means the average aggregation may also confuse the 
+model. For example,"The movie is not very good , but i still like it." should be positive, 
+"The movie is very good , but i still do not like it ." should be negative, but average 
+aggregation will take them similar and has worse classification. Secondly, FastText can easily 
+faces overfitting after less than 10 epochs, which make it hard to train when the data set is small.
+LogisticRegression is faster and a bit better than FastText on testing accuracy, therefore I choose LogisticRegression.
 
 
 \section*{Question 5 Implement Word2Vec}
 Code in Pycharm
 
 \section*{Question 6 Compare pre-trained embeddings}
-Classifier without pre-train performs better.
+Classifier without pre-train performs better. There are several reasons for 
+pretrained classifier performing bad. First of all, the pretrained embedding 
+definitely has negative effect on the initial model of movie review problem because 
+model quickly converges into a local minimum for loss function. Secondly, 
+pretrained model still faces overfitting problem. Thirdly, the pretraining process 
+uses unlabelled text, which is an unsupervised learning process, and the embedding after 
+pretraining may not be relevant to the attitude of a movie review. Therefore, 
+the pretrained embeddings have negative effect on the Q6 classifier.
+\\
+\textbf{First setting}:\\
+epochs: 10\\
+hidden neurons: 128\\
+optimizer: Adam with lr set to 0.001\\
+Results:\\
+training accuracy: 0.7016000151634216\\
+validation accuracy: 0.7015999555587769\\
+testing accuracy: 0.7032999992370605\\
+
+\textbf{Other Three setting}:\\
+\textbf{Second setting}:\\
+epochs: 5\\
+hidden neurons: 32\\
+optimizer: Adam with lr set to 0.001\\
+Results:\\
+training accuracy: 0.5785999894142151\\
+validation accuracy: 0.585599958896637\\
+testing accuracy: 0.5831999778747559\\
+\textbf{Third setting}:\\
+epochs: 5\\
+hidden neurons: 32\\
+optimizer: Adam with lr set to 0.001\\
+Results:\\
+training accuracy: 0.6610000133514404\\
+validation accuracy: 0.6523000001907349\\
+testing accuracy: 0.6656999588012695\\
+
+\textbf{Forth setting}:\\
+epochs: 5\\
+hidden neurons: 32\\
+optimizer: Adam with lr set to 0.1\\
+Results:\\
+training accuracy: 0.6171333193778992\\
+validation accuracy: 0.5895999670028687\\
+testing accuracy: 0.5947999954223633\\
+
 
 \section*{Question 7 Further Modification}
-
+The main change I make is replacing the linear classifier in FastText with a 
+multi-layer neural network. The multi-layer contains 3 linear layer as well as 
+dropout layers. To give it non-linear features, I use Leaky-ReLU to maintain 
+negative neurons.
+Results:\\
+training accuracy: 0.9234333634376526\\
+validation accuracy: 0.8883000016212463\\
+testing accuracy: 0.8956999778747559\\
 
 \end{document}

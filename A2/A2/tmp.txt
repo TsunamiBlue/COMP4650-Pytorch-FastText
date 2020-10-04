@@ -1,5 +1,5 @@
+training accuracy: 0.8812722563743591
+validation accuracy: 0.8571099042892456
+testing accuracy: 0.8573461771011353
 
 
-training accuracy: 0.9328136444091797
-validation accuracy: 0.8872157335281372
-testing accuracy: 0.8899999856948853
